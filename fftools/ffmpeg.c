@@ -4848,6 +4848,10 @@ int main(int argc, char **argv)
 
     register_exit(ffmpeg_cleanup);
 
+    /**
+     * @brief setvbuf 设置文件流的缓冲区，这里取消设置
+     * 可以让错误输出马上可见
+     */
     setvbuf(stderr,NULL,_IONBF,0); /* win32 runtime needs this */
 
     av_log_set_flags(AV_LOG_SKIP_REPEATED);
