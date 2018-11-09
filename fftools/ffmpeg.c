@@ -4865,6 +4865,7 @@ int main(int argc, char **argv)
     }
 
 #if CONFIG_AVDEVICE
+    //与计算机音视频输入输出设备相关注册
     avdevice_register_all();
 #endif
     avformat_network_init();

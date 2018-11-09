@@ -612,7 +612,7 @@ extern int filter_complex_nbthreads;
 extern int vstats_version;
 
 extern const AVIOInterruptCB int_cb;
-
+//定义位置在ffmpeg_opt.c的3324行
 extern const OptionDef options[];
 extern const HWAccel hwaccels[];
 extern AVBufferRef *hw_device_ctx;
